@@ -27,7 +27,7 @@ function Header() {
 		<div className='menu-container'>
 			<header>
 				<NavLink to='/' className='hero-logo'>
-					<img src="./images/tlup-logo.png" alt="" />
+					<img src='./images/tlup-logo.png' alt='' />
 				</NavLink>
 
 				{!isDesktop && (
@@ -40,13 +40,16 @@ function Header() {
 						<nav className={`menu ${isOpen ? 'open' : ''}`}>
 							<ul>
 								<li>
-									<NavLink to='/'>home</NavLink>
+									<NavLink to='/'>TLUP</NavLink>
 								</li>
 								<li>
-									<NavLink to='/about-me'>about me</NavLink>
+									<NavLink to='/sobre'>Sobre nós</NavLink>
 								</li>
 								<li>
-									<NavLink to='/contact-me'>get in touch</NavLink>
+									<NavLink to='/works'>Trabalhos</NavLink>
+								</li>
+								<li>
+									<NavLink to='/contact-me'>Fala connosco</NavLink>
 								</li>
 							</ul>
 						</nav>
