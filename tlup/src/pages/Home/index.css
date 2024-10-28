@@ -1,0 +1,4 @@
+.bg {
+	background-color: var(--app-bg);
+	height: 100vh;
+}
