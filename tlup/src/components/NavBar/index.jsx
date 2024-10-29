@@ -43,13 +43,13 @@ function Header() {
 									<NavLink to='/'>TLUP</NavLink>
 								</li>
 								<li>
-									<NavLink to='/sobre'>Sobre nós</NavLink>
+									<a href="#about">Sobre nós</a>
 								</li>
 								<li>
 									<NavLink to='/portfolio'>Portfólio</NavLink>
 								</li>
 								<li>
-									<NavLink to='/contact-me'>Fala connosco</NavLink>
+									<a href='#contact'>Fala connosco</a>
 								</li>
 							</ul>
 						</nav>

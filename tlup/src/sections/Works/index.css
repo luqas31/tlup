@@ -1,0 +1,15 @@
+.works {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 2rem;
+	gap: 2rem;
+}
+
+.works h1 {
+	font-family: 'PJS';
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--app-text);
+    margin: 0 2.7rem;
+}
