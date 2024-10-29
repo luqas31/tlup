@@ -1,4 +1,9 @@
 @font-face {
-  font-family: 'BeVietnam';
-  src: url('./fonts/BeVietnamPro-Variable.ttf') format('truetype');
+  font-family: 'BV';
+  src: url('../fonts/BeVietnamPro-Variable.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'PJS';
+  src: url('../fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
 }

@@ -11,6 +11,7 @@ header {
     padding-right: 1.2rem;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: var(--app-bg);
 }
 
 header img {
@@ -79,6 +80,7 @@ ul {
     visibility: visible;
     transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0s;
+    background-color: var(--app-bg);
 }
 
 .menu ul {

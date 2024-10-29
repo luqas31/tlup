@@ -1,0 +1,38 @@
+.about-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-question {
+	padding-top: 2rem;
+	margin: 0rem 2.7rem;
+}
+
+.about-title {
+	margin: 0rem 2.7rem;
+}
+
+.about-title h1 {
+	font-family: 'PJS';
+}
+
+.about-question h2 {
+    font-family: 'BV';
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-question p {
+    font-family: 'BV';
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+}
+
+.about-bg{
+    background-color: var(--app-bg);
+    color: var(--app-text);
+    padding: 2rem 0;
+}
