@@ -1,11 +1,13 @@
 import './index.css';
 import NavBar from '../../components/NavBar';
 import About from '../../sections/About';
+import Contact from '../../sections/Contact';
 
 function Home() {
 	return (
 		<div className='bg'>
-<About />
+			<About />
+			<Contact />
 		</div>
 	);
 }

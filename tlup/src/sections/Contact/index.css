@@ -1,0 +1,136 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--app-bg);
+	color: var(--app-text);
+	width: 100vw;
+}
+
+.contact-container {
+	margin: 2.7rem;
+}
+
+.contact-container h1 {
+	font-family: 'PJS';
+	font-size: 2rem;
+	margin: 0.5rem 0;
+}
+
+.contact-container span {
+	font-family: 'Ogg BI';
+	font-style: italic;
+	font-weight: 400;
+}
+
+.contact-container p {
+	font-family: 'Plus Jakarta Sans Regular';
+	font-size: 0.875rem;
+	margin: 0.2rem 0;
+	text-align: justify;
+	line-height: 1.55rem;
+	padding-top: 1rem;
+}
+
+.contact-name-email {
+	display: flex;
+}
+
+.contact-subject {
+	display: flex;
+	flex-direction: column;
+	flex-direction: flex-end;
+}
+
+.contact-subject p {
+	align-self: flex-end;
+}
+
+.contact-subject input::placeholder {
+	text-align: end;
+}
+
+.input-container {
+	position: relative;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+
+.input-container input,
+.input-container textarea {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 0.75rem;
+	outline: none;
+	background-color: transparent;
+	color: var(--app-text);
+	border: none;
+}
+
+.input-container textarea {
+	resize: none;
+	height: 200px;
+	font-family: 'Plus Jakarta Sans Regular';
+}
+
+.input-container.textarea-container {
+	margin-top: 2.5rem;
+}
+
+.input-container label {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	font-size: 1rem;
+	color: #999;
+	transition: all 0.2s ease;
+	pointer-events: none;
+	font-family: 'Plus Jakarta Sans Regular';
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+	top: -1rem;
+	left: 0.5rem;
+	font-size: 0.75rem;
+	color: #ffffff;
+}
+
+.contact-content {
+	margin-top: 2.5rem;
+}
+
+.contact-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact-button button {
+	padding: 0.5rem 1rem;
+	background-color: var(--app-bg);
+	color: var(--app-text);
+	border: 0px;
+	font-family: 'PJS';
+	font-size: 0.875rem;
+	cursor: pointer;
+}
+
+.contact-or-email {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact-alternatives p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    padding-top: 0rem;
+}
