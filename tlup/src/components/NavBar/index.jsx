@@ -46,7 +46,7 @@ function Header() {
 									<NavLink to='/sobre'>Sobre nós</NavLink>
 								</li>
 								<li>
-									<NavLink to='/works'>Portfolio</NavLink>
+									<NavLink to='/portfolio'>Portfólio</NavLink>
 								</li>
 								<li>
 									<NavLink to='/contact-me'>Fala connosco</NavLink>
