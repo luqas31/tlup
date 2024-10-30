@@ -39,6 +39,10 @@
     padding: 2rem 0;
 }
 
+.about-img {
+    display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
 }

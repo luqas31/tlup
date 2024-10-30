@@ -8,6 +8,9 @@ function About() {
 					<div className='about-title'>
 						<h1>sobre nós</h1>
 					</div>
+					<div className="about-img">
+						<img src="./images/tlup-about.png" alt="" />
+					</div>
 					<div className='about-content'>
 						<div className='about-question'>
 							<h2>O que fazemos?</h2>
