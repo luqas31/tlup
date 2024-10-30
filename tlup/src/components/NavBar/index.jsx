@@ -43,7 +43,7 @@ function Header() {
 									<NavLink to='/'>TLUP</NavLink>
 								</li>
 								<li>
-									<a href="#about">Sobre nós</a>
+									<a href='#about'>Sobre nós</a>
 								</li>
 								<li>
 									<NavLink to='/portfolio'>Portfólio</NavLink>
@@ -60,10 +60,16 @@ function Header() {
 					<nav className='desktop-menu'>
 						<ul>
 							<li>
-								<NavLink to='/about-me'>about me</NavLink>
+								<NavLink to='/'>TLUP</NavLink>
 							</li>
 							<li>
-								<NavLink to='/contact-me'>get in touch</NavLink>
+								<a href='#about'>Sobre nós</a>
+							</li>
+							<li>
+								<NavLink to='/portfolio'>Portfólio</NavLink>
+							</li>
+							<li>
+								<a href='#contact'>Fala connosco</a>
 							</li>
 						</ul>
 					</nav>
