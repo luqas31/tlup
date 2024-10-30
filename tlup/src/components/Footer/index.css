@@ -46,6 +46,8 @@ footer {
 .footer-contacts h4 {
 	font-family: 'BV';
 	font-weight: 600;
+        font-size: 0.625rem;
+        padding-bottom: 0.5rem;
 }
 
 .footer-contacts p {
