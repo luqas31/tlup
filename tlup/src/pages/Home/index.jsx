@@ -4,6 +4,7 @@ import About from '../../sections/About';
 import Contact from '../../sections/Contact';
 import Transition from '../../sections/Transition';
 import Works from '../../sections/Works';
+import Footer from '../../components/Footer';
 
 function Home() {
 	return (
@@ -13,6 +14,7 @@ function Home() {
 			<Transition />
 			<Works />
 			<Contact />
+			<Footer/>
 		</div>
 	);
 }

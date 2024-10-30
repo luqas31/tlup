@@ -1,5 +1,5 @@
 import './index.css';
-
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 function Footer() {
 	return (
 		<div>
@@ -10,9 +10,12 @@ function Footer() {
 							<img src='./images/tlup-logo.png' alt='' />
 						</div>
 						<div className='links'>
-							<p>IG</p>
-							<p>FB</p>
-							<p>LI</p>
+							<a href='https://www.instagram.com/tiralaumapic' target='_blank' rel='noopener noreferrer'>
+								<FaInstagram size={20} />
+							</a>
+							<a href='https://www.youtube.com/tiralaumapic' target='_blank' rel='noopener noreferrer'>
+								<FaYoutube size={20} />
+							</a>
 						</div>
 					</div>
 					<div className='footer-contacts'>
