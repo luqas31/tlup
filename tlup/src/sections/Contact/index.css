@@ -5,7 +5,7 @@
 	align-items: center;
 	background-color: var(--app-bg);
 	color: var(--app-text);
-	width: 100vw;
+	width: auto;
 }
 
 .contact-container {
@@ -132,14 +132,19 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-    padding-top: 0rem;
+	padding-top: 0rem;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
+	.contact-name-email {
+		width: 90vw;
 
+	}
+
+	.input-container {
+		width: 90vw;
+	}
 }
 
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-	
+@media (min-width: 1024px) {
 }
