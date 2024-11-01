@@ -144,6 +144,10 @@
 	.input-container {
 		width: 90vw;
 	}
+
+	.contact-container h1 {
+		font-size: 4rem;
+	}
 }
 
 @media (min-width: 1024px) {

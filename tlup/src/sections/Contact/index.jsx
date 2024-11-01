@@ -5,7 +5,7 @@ function Contact() {
 		<div>
 			<section id='contact' className='contact'>
 				<div className='contact-container'>
-					<h1>Contactos</h1>
+					<h1>contactos</h1>
 					<div className='contact-content'>
 						<div className='contact-name-email'>
 							<div className='input-container contact-name'>
