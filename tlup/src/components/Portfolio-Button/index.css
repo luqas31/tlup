@@ -11,7 +11,7 @@
 	display: inline-flex;
 	fill: currentcolor;
 	font-family: 'BV';
-	font-size: 1.25rem;
+	font-size: 0.625rem;
 	font-weight: 600;
 	height: 48px;
 	justify-content: center;
@@ -65,4 +65,15 @@
 
 .button-17:disabled {
 	box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .button-17 {
+    font-size: 1.25rem;
+
+}
+
 }
