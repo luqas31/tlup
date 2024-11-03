@@ -9,6 +9,7 @@ import Footer from '../../components/Footer';
 function Home() {
 	return (
 		<div className='bg'>
+			<NavBar />
 			<About />
 			<Transition />
 			<Works />
