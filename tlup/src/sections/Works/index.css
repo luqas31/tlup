@@ -4,7 +4,7 @@
 	justify-content: center;
 	margin-top: 2rem;
 	gap: 2rem;
-	background-color: var(--app-bg)
+	background-color: var(--app-bg);
 }
 
 .works h1 {
@@ -12,19 +12,23 @@
 	font-size: 2rem;
 	font-weight: 700;
 	color: var(--app-text);
-    margin: 0 2.7rem;
+	margin: 0 2.7rem;
 	justify-self: flex-start;
 }
 
-
 @media (min-width: 768px) {
-.works h1 {
-	font-size: 4rem;
-}
+	.works h1 {
+		font-size: 4rem;
+	}
+
+	.works {
+		margin-top: 4rem;
+		gap: 4rem;
+	}
 }
 
 @media (min-width: 1280px) {
-	.works-title{
+	.works-title {
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;

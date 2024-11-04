@@ -68,9 +68,13 @@
 		justify-content: center;
 		padding-top: 2rem;
 	}
+.about-bg {
+	padding-bottom: 4rem;
+}
 
 
 }
 
 @media (min-width: 1024px) {
 }
+
