@@ -10,11 +10,13 @@ function Home() {
 	return (
 		<div className='bg'>
 			<NavBar />
-			<About />
-			<Transition />
-			<Works />
-			<Contact />
-			<Footer/>
+			<main>
+				<About />
+				<Transition />
+				<Works />
+				<Contact />
+			</main>
+			<Footer />
 		</div>
 	);
 }
