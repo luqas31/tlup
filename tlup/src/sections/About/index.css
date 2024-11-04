@@ -59,7 +59,7 @@
 	.about-img {
 		display: flex;
 		height: 25rem;
-        margin-left: 2.7rem;
+		margin-left: 2.7rem;
 	}
 
 	.about-all {
@@ -68,13 +68,16 @@
 		justify-content: center;
 		padding-top: 2rem;
 	}
-.about-bg {
-	padding-bottom: 4rem;
-}
-
-
+	.about-bg {
+		padding-bottom: 4rem;
+	}
 }
 
 @media (min-width: 1024px) {
 }
 
+@media (min-width: 1280px) {
+	.about-bg {
+		margin: 0 5rem;
+	}
+}

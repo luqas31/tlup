@@ -34,4 +34,16 @@
 		justify-content: flex-start;
 		margin: 0 1.5rem;
 	}
+
+	.works {
+		margin: 0 5rem;
+	}
+
+	.works h1 {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1400px) {
+	
 }

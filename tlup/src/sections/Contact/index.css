@@ -138,7 +138,6 @@
 @media (min-width: 768px) {
 	.contact-name-email {
 		width: 90vw;
-
 	}
 
 	.input-container {
@@ -150,5 +149,24 @@
 	}
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 1280px) {
+	.contact-container {
+		margin: 5rem;
+	}
+	.contact-container h1 {
+		margin: 0rem 3rem;
+	}
+
+	.contact-name-email {
+		width: 90vw;
+
+	}
+
+	.input-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
 }
