@@ -81,3 +81,9 @@
 		margin: 0 5rem;
 	}
 }
+
+@media (min-width: 1440px) {
+	.about-bg {
+		margin: 0 20rem;
+	}
+}

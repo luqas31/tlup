@@ -45,5 +45,16 @@
 }
 
 @media (min-width: 1400px) {
-	
+	.works {
+				margin: 0 20rem;
+	}
+
+	.works-title {
+		margin: 0 3rem;
+	}
+
+		.works {
+		margin-top: 4rem;
+		gap: 4rem;
+	}
 }
