@@ -178,3 +178,10 @@
     }
 
 }
+
+@media (min-width: 1600px) {
+	.contact-container h1 {
+		margin: 0 23rem;
+	}
+
+}

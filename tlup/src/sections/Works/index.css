@@ -40,7 +40,7 @@
 	}
 
 	.works h1 {
-		margin: 0;
+		margin: 2rem 0rem;
 	}
 }
 
@@ -56,5 +56,28 @@
 		.works {
 		margin-top: 4rem;
 		gap: 4rem;
+	}
+
+		.works h1 {
+		margin: 2rem 0rem;
+	}
+}
+
+@media(min-width: 1600px) {
+	.works {
+		margin: 0 25rem;
+	}
+
+	.works-title {
+		margin: 0 3rem;
+	}
+
+		.works {
+		margin-top: 4rem;
+		gap: 4rem;
+	}
+
+		.works h1 {
+		margin: 2rem 0rem;
 	}
 }
