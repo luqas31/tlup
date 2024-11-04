@@ -11,7 +11,7 @@ function Home() {
 	return (
 		<div className='bg'>
 			<Helmet>
-				<title>Home - Meu Portfólio</title>
+				<title>TLUP | Produtora Audiovisual</title>
 				<meta
 					name='description'
 					content='Transformamos ideias em experiências audiovisuais memoráveis. Nossa empresa de produção audiovisual oferece serviços de filmagem, edição, animação e criação de conteúdo para empresas, eventos e campanhas publicitárias. Explore nossa paixão pela narrativa visual e leve sua comunicação para o próximo nível.'
