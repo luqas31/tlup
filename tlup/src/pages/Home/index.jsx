@@ -18,7 +18,6 @@ function Home() {
 				/>
 				<meta name='keywords' content='tlup, tiralaumapic, TLUP, TiraLaUmaPic, Produtora, Audiovisual, Lisboa, Videoclips, Fotografia'/>
 			</Helmet>
-			<NavBar />
 			<main>
 				<About />
 				<Transition />

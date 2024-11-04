@@ -5,8 +5,10 @@ function Works() {
 	return (
 		<div>
 			<section id='works' className='works'>
-                <h1>descobre com quem já trabalhámos</h1>
-               <Button/>
+				<div className='works-title'>
+					<h1>descobre com quem já trabalhámos</h1>
+				</div>
+				<Button />
 			</section>
 		</div>
 	);

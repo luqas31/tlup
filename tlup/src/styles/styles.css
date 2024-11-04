@@ -9,3 +9,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
+main, footer, header {
+			background-color: var(--app-bg);
+}
