@@ -69,9 +69,11 @@
 .contact-button {
 	display: flex;
 	justify-content: center;
+    align-items: center;
 	padding-bottom: 2rem;
 	flex-direction: column;
 	color: var(--app-text);
+    width: 100%;
 }
 
 .contact-button p {
@@ -96,6 +98,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    width: 15%;
 }
 
 .submit-button i {

@@ -26,7 +26,7 @@ function Contact() {
 								<label>O teu endereço de email</label>
 							</div>
 							<div className='input-container textarea-container contact-message'>
-								<textarea placeholder=' '></textarea>
+								<textarea placeholder=''></textarea>
 								<label>A tua mensagem</label>
 							</div>
 							<div className='contact-button'>
