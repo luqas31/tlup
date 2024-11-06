@@ -10,6 +10,93 @@ html {
 	scroll-behavior: smooth;
 }
 
-main, footer, header {
-			background-color: var(--app-bg);
+main,
+footer,
+header {
+	background-color: var(--app-bg);
+}
+
+.section-title h2 {
+	font-size: 2rem;
+	font-family: 'PJS';
+}
+
+.section-title {
+	padding: 2.5rem 0;
+	color: var(--app-text);
+}
+
+.section-bg {
+	margin: 0 2.5rem;
+}
+
+
+@media (min-width: 768px) {
+
+
+	.section-bg {
+		margin: 0 2.5rem;
+	}
+
+	.section-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 3rem;
+	}
+
+	.section-title h2 {
+		font-size: 3rem;
+	}
+
+
+
+	.section-content {
+		gap: 3rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.section-bg {
+		margin: 0 9rem;
+	}
+	.section-content {
+		gap: 4rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.section-bg {
+		margin: 0 17rem;
+	}
+
+	.section-content {
+		gap: 3rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.section-bg {
+		margin: 0 20rem;
+	}
+
+	.about-question h3 {
+		padding-bottom: 2rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.section-bg {
+		margin: 0 25rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	.section-bg {
+		margin: 0 34rem;
+	}
+
+	.section-content {
+		gap: 5rem;
+	}
 }

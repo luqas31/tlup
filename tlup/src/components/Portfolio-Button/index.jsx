@@ -9,7 +9,7 @@ function Button() {
 	};
 	return (
 		<div>
-			<button className='button-17' role='button' onClick={handleClick}>
+			<button className='button' role='button' onClick={handleClick}>
 				Portfólio
 			</button>
 		</div>

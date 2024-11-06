@@ -21,9 +21,10 @@ function Home() {
 			<NavBar />
 			<main>
 				<About />
-				<Transition />
 				<Works />
-				<Contact />
+{/* 				<Transition />
+				<Works />
+				<Contact /> */}
 			</main>
 			<Footer />
 		</div>
