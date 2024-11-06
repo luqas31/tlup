@@ -29,6 +29,20 @@ function Contact() {
 								<textarea placeholder=' '></textarea>
 								<label>A tua mensagem</label>
 							</div>
+							<div className='contact-button'>
+								<button className='submit-button'>
+									<i className='fas fa-paper-plane'> </i> Enviar
+								</button>
+							</div>
+							<div className='contact-alternative'>
+								<p>ou</p>
+								<p>tlup@gmail.com</p>
+								<div className='contact-socials'>
+									<a href='https://www.instagram.com/tiralaumapic' target='_blank' rel='noopener noreferrer'>
+										<i className='fab fa-instagram'></i>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
