@@ -4,7 +4,7 @@ import './index.css';
 function About() {
 	return (
 		<>
-			<section className='about-section'>
+			<section id='about' className='about-section'>
 				<div className='section-bg'>
 					<div className='section-title'>
 						<h2>sobre nós</h2>

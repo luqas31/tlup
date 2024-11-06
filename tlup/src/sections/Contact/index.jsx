@@ -4,7 +4,7 @@ import './index.css';
 function Contact() {
 	return (
 		<>
-			<section className='works-section'>
+			<section id='contact' className='works-section'>
 				<div className='section-bg'>
 					<div className='section-title'>
 						<h2>vem trabalhar connosco</h2>

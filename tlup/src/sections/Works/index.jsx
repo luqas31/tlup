@@ -5,7 +5,7 @@ import Button from '../../components/Portfolio-Button';
 function Works() {
 	return (
 		<>
-			<section className='works-section'>
+			<section id='works' className='works-section'>
 				<div className='section-bg'>
 					<div className='section-title'>
 						<h2>descobre com quem já trabalhámos</h2>

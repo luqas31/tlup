@@ -25,7 +25,6 @@ function Home() {
 				<Works />
 				<Contact />
 			</main>
-
 			<Footer />
 		</>
 	);
