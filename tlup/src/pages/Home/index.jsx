@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import NavBar from '../../components/NavBar';
 import About from '../../sections/About';
 import Contact from '../../sections/Contact';
+import Contact2 from '../../sections/Contact/contact';
 import Transition from '../../sections/Transition';
 import Works from '../../sections/Works';
 import Footer from '../../components/Footer';
@@ -21,9 +22,11 @@ function Home() {
 			<NavBar />
 			<main>
 				<About />
+				<Transition />
 				<Works />
-{/* 				<Transition />
-				<Works />
+				<Contact2 />
+				
+		{/* 	
 				<Contact /> */}
 			</main>
 			<Footer />

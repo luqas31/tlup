@@ -1,0 +1,68 @@
+.contact-name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-subject {
+    display: flex;
+    flex-direction: column;
+    flex-direction: flex-end;
+}
+
+.contact-subject p {
+    align-self: flex-end;
+}
+
+.contact-subject input::placeholder {
+    text-align: end;
+}
+
+.input-container {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--app-text);
+    border: none;
+}
+
+.input-container textarea {
+    resize: none;
+    height: 200px;
+    font-family: 'PJS';
+}
+
+
+.input-container label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1rem;
+    color: #ffffff81;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-family: 'BV';
+    font-weight: 200;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+    top: -1rem;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+
+.contact-content {
+    margin-top: 2.5rem;
+}
