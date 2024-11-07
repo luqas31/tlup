@@ -4,8 +4,8 @@ import './index.css';
 
 function Header() {
 	const [isOpen, setIsOpen] = useState(false);
-
 	const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 834);
+	const [isHeroSection, setIsHeroSection] = useState(true);
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
@@ -16,16 +16,24 @@ function Header() {
 			setIsDesktop(window.innerWidth >= 834);
 		};
 
+		const handleScroll = () => {
+			const heroSection = document.getElementById('hero');
+			const heroHeight = heroSection ? heroSection.offsetHeight : 0;
+			setIsHeroSection(window.scrollY < heroHeight);
+		};
+
 		window.addEventListener('resize', handleResize);
+		window.addEventListener('scroll', handleScroll);
 
 		return () => {
 			window.removeEventListener('resize', handleResize);
+			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
 
 	return (
-		<div className='menu-container'>
-			<header>
+		<div className={`menu-container ${isHeroSection ? 'transparent' : ''}`}>
+			<header className={isHeroSection ? 'transparent' : ''}>
 				<NavLink to='/' className='hero-logo'>
 					<img src='./images/tlup-logo.png' alt='' />
 				</NavLink>
@@ -78,4 +86,5 @@ function Header() {
 		</div>
 	);
 }
+
 export default Header;
