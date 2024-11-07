@@ -1,0 +1,72 @@
+{
+	"hero": [
+		{
+			"id": 1,
+			"title": ""
+		}
+	],
+
+	"about": [
+		{
+			"id": 1,
+			"title": "sobre nós",
+			"image": "/images/tlup-about.png",
+			"questions": [
+				{
+					"question": "O que fazemos?",
+					"answer": "Tiralaumapic é uma empresa de Produção Audiovisual, especializada em Pré-produção, Produção e Pós-produção, com um toque criativo e dinâmico"
+				},
+				{
+					"question": "Como fazemos?",
+					"answer": "Com dedicação e entusiasmo, seguimos uma abordagem colaborativa e prática. Do processo de pré-produção até à entrega final, auxiliamos os nossos clientes a comunicar a sua mensagem de maneira ainda mais clara e eficaz."
+				},
+				{
+					"question": "Porque é que o fazemos?",
+					"answer": "O nosso objetivo é produzir vídeos de qualidade que tirem o máximo proveito do meio, seja apresentando ideias complexas de forma simples ou ajudando os clientes a cativar o público através de narrativas criativas."
+				}
+			]
+		}
+	],
+
+	"works": [
+		{
+			"id": 1,
+			"title": "descobre com quem já trabalhámos"
+		}
+	],
+
+	"contact": [
+		{
+			"id": 1,
+			"title": "vem trabalhar connosco",
+			"inputs": [
+				{
+					"id": 1,
+					"label": "Nome"
+				},
+				{
+					"id": 2,
+					"label": "Assunto"
+				},
+				{
+					"id": 3,
+					"label": "O teu endereço de email"
+				},
+				{
+					"id": 4,
+					"label": "A tua mensagem"
+				}
+			],
+			"buttonText": "Enviar",
+			"alternativeText": "ou",
+			"email": "tlup@gmail.com",
+			"socials": [
+				{
+					"platform": "instagram",
+					"url": "https://www.instagram.com/tiralaumapic",
+					"iconClass": "fab fa-instagram"
+				}
+			]
+		}
+	]
+}
