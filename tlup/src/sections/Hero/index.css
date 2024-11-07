@@ -1,5 +1,6 @@
 .hero {
 	background-image: url('../../../public/images/tlup-hero.jpg');
+	border-radius: 0 0 20px 20px;
 	height: 100vh;
 	background-position: center;
 	background-size: cover;
@@ -11,7 +12,6 @@
 	align-items: flex-end;
 	height: 100%;
 	margin: 0 2.5rem;
-	flex-direction: ;
 }
 
 .hero-title {
@@ -19,7 +19,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 3rem;
-    	margin-bottom: 17rem;
+	margin-bottom: 17rem;
 }
 
 .hero-title h1 {
