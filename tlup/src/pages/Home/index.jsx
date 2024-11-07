@@ -6,6 +6,7 @@ import Contact from '../../sections/Contact';
 import Transition from '../../sections/Transition';
 import Works from '../../sections/Works';
 import Footer from '../../components/Footer';
+import Hero from '../../sections/Hero';
 
 function Home() {
 	return (
@@ -18,8 +19,9 @@ function Home() {
 				/>
 				<meta name='keywords' content='tlup, tiralaumapic, TLUP, TiraLaUmaPic, Produtora, Audiovisual, Lisboa, Videoclips, Fotografia' />
 			</Helmet>
-{/* 			<NavBar /> */}
+			<NavBar />
 			<main>
+				<Hero />
 				<About />
 				<Transition />
 				<Works />

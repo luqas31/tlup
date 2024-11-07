@@ -40,7 +40,7 @@ function Header() {
 						<nav className={`menu ${isOpen ? 'open' : ''}`}>
 							<ul>
 								<li>
-									<NavLink to='/'>TLUP</NavLink>
+									<a href='#hero'>TLUP</a>
 								</li>
 								<li>
 									<a href='#about'>Sobre nós</a>
@@ -60,7 +60,7 @@ function Header() {
 					<nav className='desktop-menu'>
 						<ul>
 							<li>
-								<NavLink to='/'>TLUP</NavLink>
+								<a href='#hero'>TLUP</a>
 							</li>
 							<li>
 								<a href='#about'>Sobre nós</a>
