@@ -1,0 +1,65 @@
+.pfolio-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	color: var(--app-text);
+    font-family: 'BV';
+	gap: 1rem;
+}
+
+.pfolio-grid img {
+	width: 100%;
+	height: 100%;
+}
+
+.pfolio-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.pfolio-item h3 {
+	padding-top: 0.5rem;
+}
+
+.pfolio-filter {
+	display: flex;
+	justify-content: space-around;
+	gap: 2rem;
+	margin-bottom: 2rem;
+
+}
+
+.filter-item {
+	background: none;
+	border: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	text-decoration: none; /* Opcional: para parecer mais com um link */
+	color: var(--app-text);
+    font-size: 0.75rem;
+    font-family: 'BV';
+}
+
+.filter-item:hover {
+	text-decoration: none; /* Opcional: remover sublinhado ao passar o mouse */
+}
+
+@media (min-width: 768px) {
+	.pfolio-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+    .filter-item {
+        font-size: 1rem;
+    }
+}
+
+#pfolio {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}

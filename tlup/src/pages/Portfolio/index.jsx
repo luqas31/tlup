@@ -1,18 +1,18 @@
-import React from 'react'
-import PortfolioSection from '../../sections/Portfolio'
+import React from 'react';
+import PortfolioSection from '../../sections/Portfolio';
 import Header from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
 function Portfolio() {
-  return (
-      <div>
-{/*           <Header /> */}
+	return (
+		<div>
+			<Header />
 			<main>
 				<PortfolioSection />
-          </main>
-   {/*        <Footer /> */}
+			</main>
+			<Footer />
 		</div>
 	);
 }
 
-export default Portfolio
+export default Portfolio;
