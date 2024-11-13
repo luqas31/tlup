@@ -32,8 +32,8 @@ function Header() {
 	}, []);
 
 	return (
-		<div className={`menu-container ${isHeroSection ? 'transparent' : ''}`}>
-			<header className={isHeroSection ? 'transparent' : ''}>
+		<div className={`menu-container ${isHeroSection && !isOpen ? 'transparent' : ''}`}>
+			<header className={`${isHeroSection && !isOpen ? 'transparent' : ''} ${isOpen ? 'menu-open' : ''}`}>
 				<NavLink to='/' className='hero-logo'>
 					<img src='./images/tlup-logo.png' alt='' />
 				</NavLink>
