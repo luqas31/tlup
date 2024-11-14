@@ -8,8 +8,7 @@ function PortfolioSection() {
 	const [albums, setAlbums] = useState([]);
 	const [selectedCategory, setSelectedCategory] = useState(null);
 
-    const API_BASE_URL = 'http://admin.tlup.pt/api';
-    
+	const API_BASE_URL = 'http://admin.tlup.pt/api';
 
 	// Buscar categorias da API
 	useEffect(() => {
@@ -39,18 +38,11 @@ function PortfolioSection() {
 			}
 		};
 		fetchAlbums();
-    }, [selectedCategory]);
-    
-    const filteredAlbums = selectedCategory ? albums.filter(album => album.categoria.nome === selectedCategory) : albums;
+	}, [selectedCategory]);
 
-	const handleCategoryClick = category => {
-		setSelectedCategory(category);
-    };
-
-
-
-    albums.map(album => {console.log(album.categoria.nome)})
-
+	const handleCategoryClick = categoryId => {
+		setSelectedCategory(categoryId);
+	};
 
 	return (
 		<>
@@ -64,7 +56,7 @@ function PortfolioSection() {
 							Tudo
 						</button>
 						{categories.map(category => (
-							<button key={category.id} className='filter-item' onClick={() => handleCategoryClick(category)}>
+							<button key={category.id} className='filter-item' onClick={() => handleCategoryClick(category.id)}>
 								{category.nome}
 							</button>
 						))}
@@ -74,7 +66,7 @@ function PortfolioSection() {
 							{albums.length > 0 ? (
 								albums.map(album => (
 									<div key={album.id} className='pfolio-item'>
-										<img src={`http://admin.tlup.pt${album.capa.url}`} alt={album.attributes?.nome} className='album-cover' />
+										<img src={`http://admin.tlup.pt${album.capa.url}`} alt={album.nome} className='album-cover' />
 										<h3>{album.nome}</h3>
 									</div>
 								))
