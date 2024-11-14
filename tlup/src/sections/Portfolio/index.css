@@ -9,7 +9,9 @@
 
 .pfolio-grid img {
 	width: 100%;
-	height: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .pfolio-item {
@@ -26,7 +28,7 @@
 .pfolio-filter {
 	display: flex;
 	justify-content: space-around;
-	gap: 2rem;
+	gap: 1rem;
 	margin-bottom: 2rem;
 
 }
@@ -41,7 +43,7 @@
 	margin: 0;
 	text-decoration: none; /* Opcional: para parecer mais com um link */
 	color: var(--app-text);
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     font-family: 'BV';
 }
 
@@ -62,4 +64,8 @@
 #pfolio {
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.pfolio {
+    min-height: 100vh;
 }
