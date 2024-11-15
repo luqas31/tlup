@@ -7,7 +7,7 @@ function Footer() {
 				<div className='content'>
 					<div className='logo-links'>
 						<div className='logo'>
-							<img src='./images/tlup-logo.png' alt='' />
+							<img src='../../public/images/tlup-logo.png' alt='' />
 						</div>
 						<div className='links'>
 							<a href='https://www.instagram.com/tiralaumapic' target='_blank' rel='noopener noreferrer'>

@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function PortfolioSection() {
 	const [categories, setCategories] = useState([]);
@@ -10,7 +11,6 @@ function PortfolioSection() {
 
 	const API_BASE_URL = 'http://admin.tlup.pt/api';
 
-	// Buscar categorias da API
 	useEffect(() => {
 		const fetchCategories = async () => {
 			try {
@@ -23,7 +23,6 @@ function PortfolioSection() {
 		fetchCategories();
 	}, []);
 
-	// Buscar álbuns com base na categoria selecionada
 	useEffect(() => {
 		const fetchAlbums = async () => {
 			try {
@@ -66,8 +65,10 @@ function PortfolioSection() {
 							{albums.length > 0 ? (
 								albums.map(album => (
 									<div key={album.id} className='pfolio-item'>
-										<img src={`http://admin.tlup.pt${album.capa.url}`} alt={album.nome} className='album-cover' />
-										<h3>{album.nome}</h3>
+										<Link to={`/portfolio/${album.id}`} className='a-album'>
+											<img src={`http://admin.tlup.pt${album.capa.url}`} alt={album.nome} className='album-cover' />
+											<h3>{album.nome}</h3>
+										</Link>
 									</div>
 								))
 							) : (

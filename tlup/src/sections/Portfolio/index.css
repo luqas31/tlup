@@ -75,3 +75,9 @@
 .pfolio {
     min-height: 100vh;
 }
+
+.a-album {
+	text-decoration: none;
+	color: var(--app-text);
+	justify-items: center;
+}

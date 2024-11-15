@@ -3,6 +3,7 @@ import App from './App';
 
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
+import Album from './pages/Album';
 
 export const router = createBrowserRouter([
 	{
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
 			{
 				path: '/portfolio',
 				element: <Portfolio />,
+			},
+			{
+				path: '/portfolio/:albumId',
+				element: <Album />,
 			},
 		],
 	},
