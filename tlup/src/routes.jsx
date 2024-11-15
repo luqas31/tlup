@@ -3,7 +3,7 @@ import App from './App';
 
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-import Album from './pages/Album';
+import AlbumComp from './sections/AlbumComp';
 
 export const router = createBrowserRouter([
 	{
@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: '/portfolio/:albumId',
-				element: <Album />,
+				element: <AlbumComp />,
 			},
 		],
 	},

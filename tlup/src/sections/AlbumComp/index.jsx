@@ -4,7 +4,10 @@ import axios from 'axios';
 
 function AlbumComp() {
 	const { id } = useParams();
+
 	const [album, setAlbum] = useState(null);
+
+	console.log('id:', useParams());
 
 	useEffect(() => {
 		axios
@@ -17,11 +20,12 @@ function AlbumComp() {
 			});
 	}, [id]);
 
-	console.log(album);
 
-	return <div></div>;
+	return (
+		<>
+		</>
+	)
+
 }
 
 export default AlbumComp;
-
-
