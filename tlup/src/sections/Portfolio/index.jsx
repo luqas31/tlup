@@ -65,7 +65,7 @@ function PortfolioSection() {
 							{albums.length > 0 ? (
 								albums.map(album => (
 									<div key={album.id} className='pfolio-item'>
-										<Link to={`/portfolio/${album.id}`} className='a-album'>
+										<Link to={`/portfolio/${album.documentId}`} className='a-album'>
 											<img src={`http://admin.tlup.pt${album.capa.url}`} alt={album.nome} className='album-cover' />
 											<h3>{album.nome}</h3>
 										</Link>

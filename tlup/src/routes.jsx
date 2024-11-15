@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
 				element: <Portfolio />,
 			},
 			{
-				path: '/portfolio/:albumId',
+				path: '/portfolio/:documentId',
 				element: <AlbumComp />,
 			},
 		],
