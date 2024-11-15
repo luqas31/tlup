@@ -4,31 +4,24 @@ import axios from 'axios';
 
 function AlbumComp() {
 	const { id } = useParams();
-	const [fotos, setFotos] = useState([]);
+	const [album, setAlbum] = useState(null);
 
 	useEffect(() => {
-		if (id) {
-			axios
-				.get(`http://admin.tlup.pt/api/albums/${id}?populate=*`)
-				.then(response => {
-					setFotos(response.data.data.fotos);
-				})
-				.catch(error => {
-					console.error('Erro ao buscar fotos:', error);
-				});
-		}
+		axios
+			.get(`http://admin.tlup.pt/api/fotos?populate=*`)
+			.then(response => {
+				setAlbum(response.data);
+			})
+			.catch(error => {
+				console.error('Erro ao buscar os dados do álbum:', error);
+			});
 	}, [id]);
 
-	return (
-		<div>
-			<h1>Fotos do Álbum</h1>
-			<div>
-				{fotos.map(foto => (
-					<img key={foto.id} src={foto.url} alt={foto.nome} />
-				))}
-			</div>
-		</div>
-	);
+	console.log(album);
+
+	return <div></div>;
 }
 
 export default AlbumComp;
+
+
