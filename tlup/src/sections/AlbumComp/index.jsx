@@ -27,7 +27,7 @@ function AlbumComp() {
 			<h1>{album ? album.data.nome : 'Carregando...'}</h1>
 
 			{/* Verificar se existe fotos e se é uma lista */}
-			{album && album.data.fotos ? album.data.fotos.map((foto, index) => <img key={index} src={`http://admin.tlup.pt/${foto.url}`} alt={`foto-${index}`} />) : <p>Sem fotos disponíveis.</p>}
+			{album && album.data.fotos ? album.data.fotos.map((foto, index) => <img key={index} src={`http://admin.tlup.pt${foto.url}`} alt={`foto-${index}`} />) : <p>Sem fotos disponíveis.</p>}
 		</div>
 	);
 }
