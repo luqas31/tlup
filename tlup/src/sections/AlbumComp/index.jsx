@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './index.css';
 
 function AlbumComp() {
 	const { documentId } = useParams();
@@ -11,7 +12,6 @@ function AlbumComp() {
 		const fetchAlbum = async () => {
 			try {
 				const response = await axios.get(`${API_BASE_URL}/albums/${documentId}?populate=*`);
-				console.log(response.data); // Log para verificar a estrutura dos dados
 				setAlbum(response.data);
 			} catch (error) {
 				console.error('Erro ao buscar álbum:', error);
@@ -24,10 +24,29 @@ function AlbumComp() {
 
 	return (
 		<div>
-			<h1>{album ? album.data.nome : 'Carregando...'}</h1>
-
-			{/* Verificar se existe fotos e se é uma lista */}
-			{album && album.data.fotos ? album.data.fotos.map((foto, index) => <img key={index} src={`http://admin.tlup.pt${foto.url}`} alt={`foto-${index}`} />) : <p>Sem fotos disponíveis.</p>}
+			<section className='album'>
+				<div className='section-bg' id='pfolio'>
+					<div className='section-title'>
+						<h2>{album ? album.data.nome : 'Carregando...'}</h2>
+					</div>
+					<div className='pfolio-filter'>
+						<button>Voltar</button>
+					</div>
+					<div className='section-content'>
+						<div className='pfolio-grid'>
+							{album && album.data.fotos ? (
+								album.data.fotos.map((foto, index) => (
+									<div key={index} className='pfolio-item'>
+										<img src={`http://admin.tlup.pt${foto.url}`} alt={`foto-${index}`} />
+									</div>
+								))
+							) : (
+								<p>Sem fotos disponíveis.</p>
+							)}
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	);
 }

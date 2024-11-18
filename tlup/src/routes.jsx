@@ -3,7 +3,7 @@ import App from './App';
 
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-import AlbumComp from './sections/AlbumComp';
+import AlbumComp from './pages/Album';
 
 export const router = createBrowserRouter([
 	{
