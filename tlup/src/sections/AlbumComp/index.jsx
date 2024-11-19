@@ -8,9 +8,10 @@ import { FaArrowLeft } from 'react-icons/fa';
 function AlbumComp() {
 	const { documentId } = useParams();
 	const [album, setAlbum] = useState(null);
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
-    const navigate = useNavigate();
-
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const API_BASE_URL = 'http://admin.tlup.pt/api';
@@ -26,6 +27,47 @@ function AlbumComp() {
 			fetchAlbum();
 		}
 	}, [documentId]);
+
+	const openModal = index => {
+		setCurrentPhotoIndex(index);
+		setIsModalOpen(true);
+	};
+
+	const closeModal = () => {
+		setIsModalOpen(false);
+	};
+
+	const showPrevPhoto = () => {
+		setCurrentPhotoIndex(prevIndex => (prevIndex === 0 ? album.data.fotos.length - 1 : prevIndex - 1));
+	};
+
+	const showNextPhoto = () => {
+		setCurrentPhotoIndex(prevIndex => (prevIndex === album.data.fotos.length - 1 ? 0 : prevIndex + 1));
+	};
+
+	useEffect(() => {
+		const handleKeyDown = event => {
+			if (event.key === 'Escape') {
+				closeModal();
+			} else if (event.key === 'ArrowLeft') {
+				showPrevPhoto();
+			} else if (event.key === 'ArrowRight') {
+				showNextPhoto();
+			}
+		};
+
+		document.addEventListener('keydown', handleKeyDown);
+
+		return () => {
+			document.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [album]);
+
+	const handleClickOutside = event => {
+		if (event.target.className === 'modal') {
+			closeModal();
+		}
+	};
 
 	return (
 		<div>
@@ -44,7 +86,7 @@ function AlbumComp() {
 						<div className='pfolio-grid'>
 							{album && album.data.fotos
 								? album.data.fotos.map((foto, index) => (
-										<div key={index} className='pfolio-item'>
+										<div key={index} className='pfolio-item' onClick={() => openModal(index)}>
 											<img src={`http://admin.tlup.pt${foto.url}`} alt={`foto-${index}`} />
 										</div>
 								  ))
@@ -68,6 +110,23 @@ function AlbumComp() {
 					</div>
 				</div>
 			</section>
+
+			{isModalOpen && (
+				<div className='modal' onClick={handleClickOutside}>
+					<div className='modal-content'>
+						<span className='close' onClick={closeModal}>
+							&times;
+						</span>
+						<button className='prev' onClick={showPrevPhoto}>
+							&#10094;
+						</button>
+						<img src={`http://admin.tlup.pt${album.data.fotos[currentPhotoIndex].url}`} alt={`foto-${currentPhotoIndex}`} />
+						<button className='next' onClick={showNextPhoto}>
+							&#10095;
+						</button>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 }
