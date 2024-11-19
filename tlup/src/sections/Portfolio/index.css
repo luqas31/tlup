@@ -4,7 +4,7 @@
 	width: 100%;
 	color: var(--app-text);
     font-family: 'BV';
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .pfolio-grid img {
@@ -24,10 +24,12 @@
 .album-cover {
     width: 100%;
     height: 100%;
+	object-fit: cover;
+	padding-top: 1rem;
 }
 
 .pfolio-item h3 {
-	padding-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 .pfolio-filter {
