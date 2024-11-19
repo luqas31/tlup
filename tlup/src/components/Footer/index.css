@@ -38,6 +38,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	padding-top: 0.5rem;
+	padding-bottom: 1rem;
 	font-family: 'BV';
     font-size: 0.75rem;
     font-weight: 200;
