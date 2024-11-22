@@ -23,7 +23,6 @@ function Home() {
 			<main>
 				<Hero />
 				<About />
-				<Transition />
 				<Works />
 				<Contact />
 			</main>
