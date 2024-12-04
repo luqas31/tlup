@@ -20,9 +20,7 @@ function Footer() {
 					</div>
 					<div className='footer-contacts'>
 						<h4>Contactos</h4>
-						<p>Tel: +351 123 456 789</p>
-						<p>Mob: +351 123 456 789</p>
-						<p>tlup@tlup.pt</p>
+						<p>tiralaumapic@gmail.com</p>
 					</div>
 				</div>
 				<div className='copyright'>
